@@ -17,6 +17,6 @@ LOG_ID = config("LOG_ID", "1968236276")
 FORCESUB = config("FORCESUB", "1903834019")
 FORCESUB_UN = config("FORCESUB_UN", "DARK_WEB_REBEL")
 ACCESS_CHANNEL = config("ACCESS_CHANNEL", "1968236276")
-MONGODB_URI = config("MONGODB_URI", "")
+MONGODB_URI = config("MONGODB_URI", "mongodb://musiccbot:musiccbot@12@a96c09c3-260d-44ea-8f73-4a8bfde7e180.musicbottry-7719.mongo.a.osc-fr1.scalingo-dbs.com:30523/musicbottry-7719?replicaSet=musicbottry-7719-rs0&ssl=true")
 
 Drone = TelegramClient('bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN) 
