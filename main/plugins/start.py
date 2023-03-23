@@ -49,8 +49,8 @@ async def notice(event):
 async def source(event):
     await event.edit(source_text,
                     buttons=[[
-                         Button.url("FOR PERSONAL USE", url="https://github.com/vasusen-code/videoconvertor/tree/main"),
-                         Button.url("FOR YOUR CHANNEL ", url="https://github.com/vasusen-code/videoconvertor/")]])
+                         Button.url("FOR PERSONAL USE", url="https://telegra.ph/file/cd98e571020c407567b01.mp4"),
+                         Button.url("FOR YOUR CHANNEL ", url="https://telegra.ph/file/250fd97ce9cf61ecf627e.mp4")]])
                          
                     
 @Drone.on(events.callbackquery.CallbackQuery(data="help"))
