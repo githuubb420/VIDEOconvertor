@@ -15,18 +15,22 @@
         "API_HASH": {
             "description": "Your API HASH from my.telegram.org",
             "value": ""
+            "required": false
         },
         "API_ID": {
             "description": "Your API ID from my.telegram.org",
             "value": ""
+            "required": false
         },
         "BOT_TOKEN": {
             "description": "Bot token, get it from @BotFather.",
             "value": ""
+            "required": false
         },
         "AUTH_USERS": {
             "description": "Bot owner's UserID.",
             "value": ""
+            "required": false
         },
         "HEROKU_API": {
             "description": "Your heroku app name(optional, add only if you want to restart directly from tg.",
@@ -41,30 +45,37 @@
         "LOG_CHANNEL": {
             "description": "Log channel username, without using '@'.",
             "value": ""
+            "required": false
         },
         "LOG_ID": {
             "description": "Log channel `ID` (Should be Public)",
             "value": ""
+            "required": false
         },
         "ACCESS_CHANNEL": {
             "description": "Private group id to spy users.(Should be public group)",
             "value": ""
+            "required": false
         },
         "MONGODB_URI": {
             "description": "Your mongodb url here.",
             "value": ""
+            "required": false
         },
         "FORCESUB": {
             "description": "Channel id to which u want user be force subcribed.(Should be public)",
             "value": ""
+            "required": false
         },
         "FORCESUB_UN": {
             "description": "Forcesub channel's username.",
             "value": ""
+            "required": false
         },
         "BOT_UN": {
             "description": "Username of your bot.",
             "value": ""
+            "required": false
         }
     },
     "buildpacks": [
