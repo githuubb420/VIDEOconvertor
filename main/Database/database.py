@@ -38,26 +38,23 @@ class Database:
       
     async def is_user_exist(self, id):
         user = await self.col.find_one({'id':int(id)})
-        return True if user else False
+        return bool(user)
 
     async def total_users_count(self):
-        count = await self.col.count_documents({})
-        return count
+        return await self.col.count_documents({})
 
     async def banning(self, id):
         await self.col.update_one({'id': id}, {'$set': {'banned': True}})
     
     async def is_banned(self, id):
         user = await self.col.find_one({'id': int(id)})
-        banned = user.get('banned', False)
-        return banned
+        return user.get('banned', False)
       
     async def unbanning(self, id):
         await self.col.update_one({'id': id}, {'$set': {'banned': False}})
         
     async def get_users(self):
-        users = self.col.find({})
-        return users
+        return self.col.find({})
     
     async def update_thumb_link(self, id, link):
         await self.col.update_one({'id': id}, {'$set': {'link': link}})

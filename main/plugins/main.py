@@ -57,12 +57,8 @@ async def compin(event):
                                 [Button.inline("SSHOTS", data="sshots"),
                                  Button.inline("TRIM", data="trim")]
                             ])
-            elif 'png' in video:
+            elif 'png' in video or 'jpeg' in video or 'jpg' in video:
                 return
-            elif 'jpeg' in video:
-                return
-            elif 'jpg' in video:
-                return    
             else:
                 await event.reply('📦',
                             buttons=[  
